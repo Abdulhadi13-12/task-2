@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novell Services Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 40px;
+        }
+        h1 {
+            color: #4682b4;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button {
+            background-color: #4682b4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button[type="reset"] {
+            background-color: #d9534f;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <h1><i>Novell Services Login</i></h1>
+    <form>
+        <label for="username"><b>Username:</b></label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password"><b>Password:</b></label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="city"><b>City of Employment:</b></label>
+        <input type="text" id="city" name="city"><br><br>
+
+        <label for="server"><b>Web server:</b></label>
+        <select id="server" name="server">
+            <option value="">--Choose a server--</option>
+            <option value="server1">Server 1</option>
+            <option value="server2">Server 2</option>
+            <option value="server3">Server 3</option>
+        </select><br><br>
+
+        <p><i>Please specify your role:</i></p>
+        <input type="radio" id="admin" name="role" value="admin">
+        <label for="admin">Admin</label><br>
+        <input type="radio" id="engineer" name="role" value="engineer">
+        <label for="engineer">Engineer</label><br>
+        <input type="radio" id="manager" name="role" value="manager">
+        <label for="manager">Manager</label><br>
+        <input type="radio" id="guest" name="role" value="guest">
+        <label for="guest">Guest</label><br><br>
+
+        <p><i>Single Sign-on to the following:</i></p>
+        <input type="checkbox" id="mail" name="singleSignOn" value="mail">
+        <label for="mail">Mail</label><br>
+        <input type="checkbox" id="payroll" name="singleSignOn" value="payroll">
+        <label for="payroll">Payroll</label><br>
+        <input type="checkbox" id="selfservice" name="singleSignOn" value="selfservice">
+        <label for="selfservice">Self-service</label><br><br>
+
+        <button type="submit">Login</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
